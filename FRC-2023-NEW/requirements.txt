@@ -1,0 +1,13 @@
+black==22.12.0
+casadi==3.6.3
+matplotlib
+numpy==1.24.1
+numpy-stl
+Pillow
+pygame==2.2.0
+pyntcore==2023.4.2.0
+pyopengl==3.1.6
+pyqtgraph==0.13.1
+PyQt6==6.4.0
+tk
+transformations

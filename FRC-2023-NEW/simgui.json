@@ -1,0 +1,593 @@
+{
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Ungrouped/DigitalInput[0]": "Digital Input",
+      "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
+      "/LiveWindow/Ungrouped/PIDController[2]": "PIDController",
+      "/LiveWindow/Ungrouped/PIDController[3]": "PIDController",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/LiveWindow/Ungrouped/Talon FX [0]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [10]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [11]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [12]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [13]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [14]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [15]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [16]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [17]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [1]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [2]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [3]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [4]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [5]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [6]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [7]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [8]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [9]": "Motor Controller",
+      "/SmartDashboard/Arm": "Subsystem",
+      "/SmartDashboard/Clawncher Viz": "Mechanism2d",
+      "/SmartDashboard/ClawncherSubsystem": "Subsystem",
+      "/SmartDashboard/Elevator Viz": "Mechanism2d",
+      "/SmartDashboard/Elevators": "Subsystem",
+      "/SmartDashboard/ElevatorsSubsystem": "Subsystem",
+      "/SmartDashboard/Field": "Field2d",
+      "/SmartDashboard/Gripper": "Subsystem",
+      "/SmartDashboard/Gripper Viz": "Mechanism2d",
+      "/SmartDashboard/Intake": "Subsystem",
+      "/SmartDashboard/Intake Arm Viz": "Mechanism2d",
+      "/SmartDashboard/Intake Slider Viz": "Mechanism2d",
+      "/SmartDashboard/Intake Viz": "Mechanism2d",
+      "/SmartDashboard/IntakeSubsystem": "Subsystem",
+      "/SmartDashboard/Robot Viz": "Mechanism2d",
+      "/SmartDashboard/ScoringSelector": "Subsystem",
+      "/SmartDashboard/ScoringSelectorSubsystem": "Subsystem",
+      "/SmartDashboard/SendableChooser[0]": "String Chooser",
+      "/SmartDashboard/Swerve": "Subsystem",
+      "/SmartDashboard/Swerve Viz": "Mechanism2d",
+      "/SmartDashboard/X Viz": "Mechanism2d",
+      "/SmartDashboard/Z Viz": "Mechanism2d"
+    },
+    "windows": {
+      "/SmartDashboard/Elevator Viz": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Elevators": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Field": {
+        "Localizer": {
+          "color": [
+            0.9803921580314636,
+            0.7137255072593689,
+            0.01568627543747425,
+            255.0
+          ],
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "Localizer Raw": {
+          "color": [
+            0.0,
+            0.20588231086730957,
+            1.0,
+            255.0
+          ],
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "Odometry": {
+          "color": [
+            0.0,
+            0.9705884456634521,
+            1.0,
+            255.0
+          ],
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "Robot": {
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "Scoring Chassis Pose": {
+          "color": [
+            0.2647058963775635,
+            1.0,
+            0.0,
+            255.0
+          ],
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "Scoring Location": {
+          "arrows": false,
+          "color": [
+            0.0,
+            1.0,
+            0.0,
+            255.0
+          ],
+          "length": 0.05079999938607216,
+          "width": 0.05079999938607216
+        },
+        "Target Pose": {
+          "color": [
+            0.3823528289794922,
+            0.0,
+            1.0,
+            255.0
+          ],
+          "length": 0.9143999814987183,
+          "width": 0.9143999814987183
+        },
+        "executedTraj": {
+          "arrows": false,
+          "selectable": false,
+          "style": "Line"
+        },
+        "height": 8.013699531555176,
+        "image": "./images/field.png",
+        "traj": {
+          "arrows": false,
+          "style": "Line"
+        },
+        "units": "inches",
+        "width": 16.541749954223633,
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Gripper": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Intake": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Intake Viz": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/SendableChooser[0]": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "Plot": {
+    "Plot <0>": {
+      "plots": [
+        {
+          "axis": [
+            {
+              "label": "Position (m)"
+            },
+            {
+              "label": "Velocity (m/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "Z Axis",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Z Motor: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Z Motor: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Z Motor: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "digital": "Auto",
+              "id": "NT:/SmartDashboard/Z Motor: Target Velocity",
+              "marker": "None",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        },
+        {
+          "axis": [
+            {
+              "label": "Position (m)"
+            },
+            {
+              "label": "Velocity (m/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "X Axis",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/X Motor: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/X Motor: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/X Motor: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/X Motor: Target Velocity",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        },
+        {
+          "axis": [
+            {
+              "label": "Position (rad)"
+            },
+            {
+              "label": "Velocity (rad/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "Arm",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Target Velocity",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        }
+      ],
+      "window": {
+        "name": "Elevator"
+      }
+    },
+    "Plot <1>": {
+      "plots": [
+        {
+          "axis": [
+            {
+              "label": "Position (m)"
+            },
+            {
+              "label": "Velocity (m/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "Slider",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Slider: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Slider: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Slider: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Slider: Target Velocity",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        },
+        {
+          "axis": [
+            {
+              "label": "Position (rad)"
+            },
+            {
+              "label": "Velocity (rad/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "Arm",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Arm: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Arm: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Arm: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Arm: Target Velocity",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        },
+        {
+          "axis": [
+            {
+              "label": "Position (rad)"
+            },
+            {
+              "label": "Velocity (rad/s)"
+            }
+          ],
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 2,
+          "name": "Reorienter",
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Reorienter: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Reorienter: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Reorienter: Current Velocity",
+              "yAxis": 1
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Intake Reorienter: Target Velocity",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        }
+      ],
+      "window": {
+        "name": "Intake"
+      }
+    },
+    "Plot <2>": {
+      "plots": [
+        {
+          "backgroundColor": [
+            0.0,
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "height": 0,
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Current Position"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Target Position"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Current Velocity"
+            },
+            {
+              "color": [
+                0.7686275243759155,
+                0.30588236451148987,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/Arm Motor: Target Velocity"
+            }
+          ]
+        }
+      ],
+      "window": {
+        "name": "Arm"
+      }
+    }
+  }
+}
